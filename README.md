@@ -4,9 +4,7 @@
  快速检测上线机器的杀软环境
 
 ## Usage: 
-LoadCNA
-
-![LoadCNA](https://github.com/juruo-wankli/CheckAV-BOF/blob/main/img/LoadCNA.png)
+LoadCNA First!
 
 beacon> CheckAV
 
