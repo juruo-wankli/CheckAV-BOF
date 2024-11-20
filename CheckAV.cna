@@ -1,0 +1,18 @@
+beacon_command_register("CheckAV" , "Check AV || EDR || XDR On Current Device",
+						"A Bof That Help You Check AV || EDR || XDR On Current Device :)\n\n" .
+						"Usage 'CheckAV' gets the exist AV || EDR || XDR\n"
+);
+
+alias CheckAV
+{
+	local('$handle $data $args');
+	$barch = barch($1);
+	
+	$bid = $1;
+	$handle = openf(script_resource("CheckAV.obj"));
+	$data = readb($handle, -1);
+	closef($handle);
+	
+	btask($1, "Running CheckAV BOF@juruo-wankli :) https://github.com/juruo-wankli/CheckAV-BOF");
+	beacon_inline_execute($1, $data, "go", $null);
+}
