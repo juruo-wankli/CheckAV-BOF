@@ -4,7 +4,13 @@
  快速检测上线机器的杀软环境
 
 ## Usage: 
+LoadCNA
+
+![LoadCNA](https://github.com/juruo-wankli/CheckAV-BOF/blob/main/img/LoadCNA.png)
+
 beacon> CheckAV
+
+![BeaconUsage](https://github.com/juruo-wankli/CheckAV-BOF/blob/main/img/BeaconUsage.png)
 
 ## Supported Security Vendors:
 
@@ -18,7 +24,7 @@ beacon> CheckAV
 ## ToDo:
 - [√] 匹配大部分常见AV || EDR || XDR
 - [ ] 美观输出
-- [ ] 未匹配杀软补充 
+- [ ] 未匹配杀软补充  //向我提issue
 - [ ] NtQuerySystemInformation 枚举进程
 - [ ] Hash Match
 - [ ] ....
